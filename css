@@ -1,0 +1,184 @@
+ http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+ HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/*
+NULL
+**/
+@font-face {
+	font-family: 'DS Dots Medium';
+	src: url('../fonts/ds_dots_medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/ds_dots_medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/ds_dots_medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/ds_dots_medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/ds_dots_medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/ds_dots_medium.svg#ds_dots_medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+ font-family: "Open Sans",  Impact;
+}
+a {
+    text-decoration: none;
+    font-family: 'DS Dots Medium', Verdana, Tahoma, sans-serif;
+}
+.navigation {
+    position: absolute;
+    left: 79.6em;
+    padding: 10px;
+}
+.navigation__item {
+    display: inline;
+    position: relative;
+    padding-right: 2em;
+}
+.navigation__link__home {
+    position: absolute;
+    font-size: 27px;
+    max-width: 10em;
+    top: 1em;
+    left: 1.6em;
+    text-shadow: 
+    -1px 2px 1px #3a0f0f, 
+    -2px 4px 1px #421a1a, 
+    -3px 6px 1px blueviolet;
+}
+.navigation__link__home:hover {
+    color:white;
+    text-shadow: 
+    1px -1px 0 #767676, 
+    -1px 2px 1px #3a0f0f, 
+    -2px 4px 1px #421a1a, 
+    -3px 6px 1px blueviolet;
+}
+.navigation__link__home:after {
+    color: yellow;
+}
+.header_1 {
+    position: relative;
+    top: 2em;
+    font-size: 35px;
+    text-align: center;
+    max-width: 60em;
+    text-transform: uppercase;
+    font-family: 'DS Dots Medium', Verdana, Tahoma, sans-serif;
+}
+.career {
+    position: relative;
+    top: 5em;
+    left: 20em;
+    max-width: 50em;
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'DS Dots Medium', Verdana, Tahoma, sans-serif;
+
+}
+.sidebar {
+    position: absolute;
+    top: 6em;
+    left: 1em;
+    padding: 10px;
+    height: 1000px;
+    width: 430px;
+    background: url('https://goo.su/1cWF') repeat-y 90% 0 #fc0;
+    border: 1px solid black;
+}
+.contact_form {
+    position: relative;
+    left: 240px;
+    padding: 35px;
+    top: 120px;
+    width: 600px;
+    font-family: 'DS Dots Medium', Verdana, Tahoma, sans-serif;
+}
+.email_contact {
+    position: relative;
+    top: 1em;
+    left: 2.76em;
+    color: blue;
+}
+.button_submit {
+    position: relative;
+    left: -7.6em;
+    top: 30px;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 21em;
+    justify-content: center;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'DS Dots Medium', Verdana, Tahoma, sans-serif;
+}
+/*input[type="submit"] {
+  background: #000000;
+  color: white;
+  font-size: 10px;
+  font-family: 'DS Dots Medium', Verdana, Tahoma, sans-serif;
+}
+<form class="contact_form" action="" method="post" name="contact_form">
+        <ul>
+            <li>
+                 <h2>Feedback</h2>
+                 <span class="required_notification">*обязательное поле</span>
+            </li>
+            <li>
+                <label for="name">ВАШЕ ИМЯ*:</label>
+                <input type="text" name="name" />
+            </li>
+            <li class="email_contact">
+                <label for="email">EMAIL*:</label>
+                <input type="text" name="email" />
+                <input type="submit" value="ОТПРАВИТЬ">
+            </li>
+        </ul>
+      </form>
+**/
